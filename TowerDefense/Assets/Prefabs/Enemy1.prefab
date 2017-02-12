@@ -21,9 +21,12 @@ GameObject:
   - component: {fileID: 4027590039206900}
   - component: {fileID: 212703961472591846}
   - component: {fileID: 95433140318350508}
-  m_Layer: 0
+  - component: {fileID: 50676891526997776}
+  - component: {fileID: 61203467181526900}
+  - component: {fileID: 114721519239847384}
+  m_Layer: 8
   m_Name: Enemy1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,12 +38,46 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1832108313928608}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.44, y: -0.78, z: 0}
+  m_LocalPosition: {x: 4.2898293, y: 1.2009323, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50676891526997776
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1832108313928608}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &61203467181526900
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1832108313928608}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.4, y: 0.6}
 --- !u!95 &95433140318350508
 Animator:
   serializedVersion: 3
@@ -58,6 +95,32 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114721519239847384
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1832108313928608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad6f16bd95e1ec24790bfc88b5d44625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 0
+  exitPoint: {fileID: 4336462482412516, guid: 86a30a08d84970e47b917dfa5e8bb022, type: 2}
+  waypoints:
+  - {fileID: 4349672599840356, guid: c9507639c63dff141a297876610e0977, type: 2}
+  - {fileID: 4087865834345756, guid: c9507639c63dff141a297876610e0977, type: 2}
+  - {fileID: 4292479630220064, guid: c9507639c63dff141a297876610e0977, type: 2}
+  - {fileID: 4543139135669404, guid: c9507639c63dff141a297876610e0977, type: 2}
+  - {fileID: 4312441571686438, guid: c9507639c63dff141a297876610e0977, type: 2}
+  - {fileID: 4243595723641340, guid: c9507639c63dff141a297876610e0977, type: 2}
+  - {fileID: 4359751463633746, guid: c9507639c63dff141a297876610e0977, type: 2}
+  - {fileID: 4582313890429352, guid: c9507639c63dff141a297876610e0977, type: 2}
+  - {fileID: 4491767140006788, guid: c9507639c63dff141a297876610e0977, type: 2}
+  - {fileID: 4526820893023208, guid: c9507639c63dff141a297876610e0977, type: 2}
+  - {fileID: 4630507521381626, guid: c9507639c63dff141a297876610e0977, type: 2}
+  navigationUpdate: 0.001
 --- !u!212 &212703961472591846
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -89,7 +152,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1592007853
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f74c8df9e1c93214c90525db7b84a11b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3091d15416e686145a32241c3d4b7e1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
