@@ -16983,30 +16983,11 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!1 &725888033 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1286723378258346, guid: c9507639c63dff141a297876610e0977,
-    type: 2}
-  m_PrefabInternal: {fileID: 586483894}
 --- !u!4 &725888034 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4856743000249028, guid: c9507639c63dff141a297876610e0977,
     type: 2}
   m_PrefabInternal: {fileID: 586483894}
---- !u!61 &725888035
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 725888033}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
 --- !u!1 &727440955
 GameObject:
   m_ObjectHideFlags: 0
